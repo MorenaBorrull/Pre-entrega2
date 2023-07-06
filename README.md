@@ -4,6 +4,6 @@ Archivo de la segunda Pre-entrega del trabajo final del curso de Desarrollo Web 
 
 **Link a repositorio:** https://github.com/MorenaBorrull/Pre-entrega2.git
 
-**Link a pages:**
+**Link a pages:** https://morenaborrull.github.io/Pre-entrega2-MorenaBorrull/
 
 Morena Borrull
