@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+h1,h2{
+    color: #552227;
+}
+h1{
+    font-size: 2.5em;
+    text-align: center;
+}
+h2{
+    font-size: 2em;
+}
+p{
+    color: #552227;
+    font-size: 1.5em;
+    line-height: 1.2em;
+}
+/* ====== nav ====== */
+nav{
+    background-color: #552227;
+    padding: 10px 20px;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+    nav ul{
+        list-style: none;
+        display: flex;
+    }
+        nav ul li{
+            display: flex;
+        }
+            nav ul li a{
+                text-decoration: none;
+                color: #D2BA8C;
+                font-size: 1em;
+                padding-left: 30px;
+                display: flex;
+                margin-right: 10px;
+                align-items: center;
+            }   
+            nav a:hover{
+                color: #fcf4f0;
+            }
+            nav img{
+                width: 10%;
+                height: 5%;
+            } 
+        
+.botonera{
+     background-color: #552227;
+ }           
+    .botonera img{
+        width: 10%;
+    }   
+    .botonera a{
+        color: #D2BA8C;
+    }     
+    .botonera a:hover{
+        color: #fcf4f0;
+    }   
+/*===== main ==== */
+.background-color{
+    background-color: #D2BA8C;
+} 
+
+/* ===== footer =====             */
+footer{
+    background-color: #552227;
+    padding: 4px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: end;
+}   
+    footer ul{
+        list-style: none;
+        display: inline-block;
+    }     
+        footer ul li a{
+            text-decoration: none;
+            color: #D2BA8C;
+        }
+        footer img{
+            width: 10%;
+        }
+
+/* ====== grid ====== */
+Nuestros Servicios
+.services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px repeat(4,100px);
+    grid-template-areas: 
+    "title title"
+    "contenido contenido"
+    "contenido contenido"
+    "publicidad publicidad"
+    "publicidad publicidad";
+}
+    .services .title{
+        padding: 0 30px;
+        margin-top: 30px;
+        grid-area: title;
+    }
+    .services .contenido{
+        grid-area: contenido;
+    }
+    .services .publicidad{
+        grid-area: publicidad;
+    }
+/* Index */
+.principal{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 300px 200px;
+    grid-template-areas: 
+    "indextitle indextitle"
+    "indexbody indexbody"
+    "clients clients";
+}
+    .principal .indextitle{
+        grid-area: indextitle;
+    }
+    .principal .indexbody{
+        grid-area: indexbody;
+    }
+    .principal .clients{
+        grid-area: clients;
+    }
+/* ====== responsive ======     */
+@media (width < 768px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    /* index */
+    h1{
+        width: 100%;
+    }
+    .principal .indexbody{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .img-index{
+        width: 100%;
+    }
+    .principal .clients{
+        display: flex;
+    }
+    /* Nuestros Servicios */
+        .services .title{
+        width: 100%;
+    }
+    .services .contenido{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .services .publicidad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }   
+}
+/* ======= elementos adicionales ====== */
+.text-dark{
+    color: #552227;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.text-italic{
+    font-style: italic;
+}
+.container{
+    background-color: #D2BA8C;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px;
+    padding: 10px;
+    border: none;
+    overflow: auto;
+}
+.img-size{
+    width: 10%;
+    margin-right: 200px;
+}
+.text-index{
+    margin-top: 200px;
+}
+.text-services-right{
+    width: 50%;
+    margin-top: 5vh;
+    float: right;
+    text-align: center;
+}
+.text-services-left{
+    width: 50%;
+    margin-top: 5vh;
+    float: left;
+    text-align: center;
+}
+.text-team{
+    margin-left: 150px;
+    float: inline-end;
+}
+.img-index{
+    align-items: end;
+    width: 50%;
+}
+.img-services-right{
+    width: 40%; 
+    float: right;
+}
+.img-services-left{
+    width: 40%; 
+    float: left;
+    margin-top: 200px;
+}
+.parrafo{
+    display: flex;
+}
+.text-us{
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.img-contact{
+    width: 40%; 
+    float: right;
+    margin-left: 200px;
+}
+.forms{
+    float: left;
+}
+.text-box{
+    border-color: #552227;
+    border-width: thin;
+}
+.buttons{
+    border-color: #552227;
+    background-color: #552227;
+    color: #D2BA8C;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.w100{
+    width: 100%;
+}
+.w75{
+    width: 75%;
+}
+.w50{
+    width: 50%;
+}
+.w40{
+    width: 40%;
+}
+.w25{
+    width: 25%;
+}
+
+.flex-flow{
+    display: flex;
+    flex-flow: row wrap;
+}
+.justify-content{
+    justify-content: space-around;
+}
+.align-items{
+align-items: center;
+}
+.align-content{
+    align-content: center;
+}
+.align-content-left{
+    align-content: start;
+}
+.align-content-right{
+    align-content: end;
+}
+.index-content{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.index-text{
+    margin-top: 70px;
+}
